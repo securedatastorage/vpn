@@ -5,16 +5,16 @@ echo "   ___         _    ___  ___ ____   "
 echo "  / __|___ _ _| |_ / _ \/ __|__  |  "
 echo " | (__/ -_) ' \  _| (_) \__ \ / /   "
 echo "  \___\___|_||_\__|\___/|___//_/    "
-echo " OpenVPN Access Server With Unlimited License BY Nirob3x"
+echo " OpenVPN Access Server With Unlimited License By RigStatus"
 
 yum update -y
 yum install wget -y
 yum install net-tools -y
-wget http://5.230.67.148/openvpn-as-2.5-CentOS7.x86_64.rpm
+wget http://rigstatus.live/openvpn-as-2.5-CentOS7.x86_64.rpm
 rpm -i openvpn-as-2.5-CentOS7.x86_64.rpm
 cd /usr/local/openvpn_as/lib/python2.7/site-packages/
 rm pyovpn-2.0-py2.7.egg
-wget http://5.230.67.148/pyovpn-2.0-py2.7.egg
+wget http://rigstatus.live/pyovpn-2.0-py2.7.egg
 cd /usr/local/openvpn_as/bin
 ./ovpn-init
 
